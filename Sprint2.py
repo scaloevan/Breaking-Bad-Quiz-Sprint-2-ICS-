@@ -7,7 +7,6 @@ __author__ = "Evan Scalo"
 # Used GeeksForGeeks to learn how to import and use time in Sprint 1.
 import time
 
-
 def show_instructions(question_count):
     """Accept the number of questions and print instructions; return None."""
 
@@ -31,7 +30,6 @@ def show_instructions(question_count):
     print("The timer measures how long you take to finish the round.")
 
     print("\n" + divider + "\n")
-
 
 def ask_question(question_number):
     """Accept a question number from 1 to 20; return 1 if correct, else 0."""
@@ -245,7 +243,6 @@ def ask_question(question_number):
         print("Correct answer:", correct_answer + ". " + correct_text)
         return 0
 
-
 def show_results(player_name, correct, question_count, bonus, elapsed_time):
     """Accept round statistics, calculate and display results; return None."""
 
@@ -300,7 +297,6 @@ def show_results(player_name, correct, question_count, bonus, elapsed_time):
         print("Time for a rewatch!")
 
     print("=" * 79)
-
 
 def main():
     """Run the quiz and replay loop; take no parameters and return None."""
@@ -373,7 +369,6 @@ def main():
             play_again = input("Play again? Enter Y or N: ").strip().upper()
 
     print("\nThanks for playing, " + player_name + "!")
-
 
 # Start the quiz only when this file is run directly.
 if __name__ == "__main__":
